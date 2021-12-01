@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultViewController" customModule="Calculator" customModuleProvider="target">
+            <connections>
+                <outlet property="resultLabel" destination="xUW-Ao-MaP" id="P4l-4j-haa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn8-S3-jrC">
+                    <rect key="frame" x="20" y="442.5" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUW-Ao-MaP">
+                    <rect key="frame" x="20" y="489.5" width="374" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xUW-Ao-MaP" firstAttribute="trailing" secondItem="zn8-S3-jrC" secondAttribute="trailing" id="0eu-4O-j4O"/>
+                <constraint firstItem="zn8-S3-jrC" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="1ly-Ir-Fu8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zn8-S3-jrC" secondAttribute="trailing" constant="20" id="AWQ-Ec-mF3"/>
+                <constraint firstItem="xUW-Ao-MaP" firstAttribute="top" secondItem="zn8-S3-jrC" secondAttribute="bottom" constant="26" id="C5L-am-2F0"/>
+                <constraint firstItem="xUW-Ao-MaP" firstAttribute="leading" secondItem="zn8-S3-jrC" secondAttribute="leading" id="FSk-18-0cg"/>
+                <constraint firstItem="zn8-S3-jrC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aHW-hD-gfJ"/>
+                <constraint firstItem="zn8-S3-jrC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="feS-sg-n32"/>
+                <constraint firstItem="xUW-Ao-MaP" firstAttribute="centerX" secondItem="zn8-S3-jrC" secondAttribute="centerX" id="q6L-7T-4Ia"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
